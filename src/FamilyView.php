@@ -346,7 +346,7 @@ $sHomePhone = ExpandPhoneNumber($fam_HomePhone, $fam_Country, $dummy);
                 <?php if ($bOkToEdit) {
                     ?>
                     <button class="btn btn-app bg-orange" id="activateDeactivate">
-                        <i class="fa <?= (empty($fam_DateDeactivated) ? 'fa-times-circle-o' : 'fa-check-circle-o') ?> "></i><?php echo((empty($fam_DateDeactivated) ? _('Deactivate') : _('Activate')) . _(' this Family')); ?>
+                        <i class="fa <?= (empty($fam_DateDeactivated) ? 'fa-times-circle-o' : 'fa-check-circle-o') ?> "></i><?= (empty($fam_DateDeactivated) ? _('Deactivate') : _('Activate')) . " " . _('this Family'); ?>
                     </button>
                     <?php
                 } ?>
